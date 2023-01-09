@@ -85,7 +85,107 @@ a:hover {
     background-size: 100% 100%;
 }
 
-/* card */
+
+ .mobile-menu-bar{
+    display: inline-block;
+    text-align: right;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 20px; 
+    display: none;
+  } 
+
+  
+  
+  /* .mobile-menu-bar p{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+   */
+
+/* resposive navbar  */
+
+
+@media (max-width: 800px) {
+
+    /* .mobile-menu-bar{
+        display: block;
+      }
+    
+      .menu a:hover{
+      background: #eee;
+      color: #000;
+      transition-duration: 0.5s;
+    } */
+
+    
+    .mobile-menu-bar i{
+        cursor: pointer;
+      } 
+    
+     
+    
+      /* .menu a{
+        display: block;
+        text-align: center;
+      } */
+    
+      
+
+    
+    .logo
+    {
+        float: none;
+    }
+    .nav-bar li{
+        float: none;
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        display: inline-block;
+      
+    }
+
+    .mobile-menu-bar
+    {
+        float: right;
+        display: inline-block;
+    }
+  .flik .main {
+    display: block;
+    text-align: center;
+    display: block;
+  }
+  
+  .nav-bar ul{
+    display: block;
+    background-color: #000;
+    width: 70%;
+    text-align: center;
+    display: none;
+    
+  }
+  
+  .flik .main li {
+    
+     
+  }
+
+  .flik .main li a
+  {
+    display: block;
+   
+  }
+}
+
+
+.active{
+    display:block !important;
+  }
+  
+/* card section */
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -276,4 +376,71 @@ a:hover {
   }
   
 
+  /* users pages is  css  */
+
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .users-table th,
+  .users-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .users-table th {
+    text-align: left;
+  }
+  
+  .users-tb
+  {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  @media (max-width: 800px) {
+    .users-table {
+      border: 0;
+    }
+    
+    .users-table thead {
+      border: none;
+      /* hidden  */
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .users-table tr {
+      border-bottom: 3px solid #dddddd;
+      display: block;
+      margin-bottom: 0.625em;
+    }
+    
+    .users-table td {
+      border-bottom: 1px solid #dddddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+    }
+    
+    /* .users-table td::before { */
+      /* content: attr(data-label); */
+      /* float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    } */
+    
+    .users-table td:last-child {
+      border-bottom: 0;
+    }
+  }
   

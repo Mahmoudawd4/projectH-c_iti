@@ -9,6 +9,12 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -22,17 +28,40 @@
                 <div class="logo">
                     <a href="#">Fokir</a>
                 </div>
-                <div class="main">     
-                    <ul>
+                <div class="main">
+      </div>     
+
+      <div class="mobile-menu-bar" >
+        <i class="fa fa-bars btn" id="btn-i" ></i>
+  </div>
+
+                    <ul class="ulManu">
                         <li><a href="#">Login</a></li>
                          <li><a href="#">Register</a></li>
                          <li><a href="#">Conenact us</a></li>
                          <li><a href="./productDec.html">products </a></li>
-                         <li><a href="#">users</a></li>
+                         <li><a href="./users.html">users</a></li>
                          <li><a href="#" class="Home">Home</a></li>
+
+                         <!--  -->
+
+
                     </ul>
+
+                
+
+                  
+
+
+
             </div>
+
+             
+
+
              </div>
+
+
 
         </div>
     </nav>
@@ -97,6 +126,36 @@
     
 
       
+
+
+   <script >
+    // $(document).ready(function(){
+    //   $('#btn-i').click(function(){
+    //     $('.ulManu').toggleClass('.active');
+    //   });
+    // });
+
+
+//     $('.mobile-menu-bar').click(function() {
+//             $('.ulManu').toggleClass('active');
+//         });
+
+
+//         $(function() {
+//   $('.mobile-menu-bar').click(function() {
+//     $('.ulManu').toggleClass('.active');
+//   });
+// })
+
+$(document).ready(function(){
+  $("#btn-i").click(function(){
+    $(".ulManu").toggleClass("active");
+  });
+});
+
+
+    </script>
+
        
 
 </body>
