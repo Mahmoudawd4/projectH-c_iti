@@ -171,10 +171,10 @@ a:hover {
     
   }
   
-  .flik .main li {
+  /* .flik .main li {
     
      
-  }
+  } */
 
   .flik .main li a
   {
@@ -187,7 +187,7 @@ a:hover {
 .active{
     display:block !important;
   }
-  
+  /* end nav bar  */
 /* card section */
 
 .card {
