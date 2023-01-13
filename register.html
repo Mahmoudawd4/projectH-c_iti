@@ -8,6 +8,9 @@
     <title>prject </title>
     <link rel="stylesheet" href="./style/style.css">
 
+
+
+
     <style>
         /* Google Font CDN Link */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -48,7 +51,7 @@
             position: relative;
         }
 
-        .content .right-side::after {
+        /* .content .right-side::after {
             content: '';
             position: absolute;
             height: 70%;
@@ -57,7 +60,7 @@
             top: 50%;
             transform: translateY(-50%);
             background: #afafb6;
-        }
+        } */
 
         .content .left-side .details {
             margin: 14px;
@@ -231,33 +234,51 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+
+
+        <link rel="stylesheet" href="./style/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
 
 
-    <nav>
-        <div class="background-color">
+   <!-- nav bar  -->
+   <nav  class="navf" >
+    <div >
 
-            <div class="nav-bar">
-                <div class="logo">
-                    <a href="#">Fokir</a>
-                </div>
-                <div class="main">
-                    <ul class="ulManu">
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./register.html">Register</a></li>
-                        <li><a href="./contactUs.html">Contact us</a></li>
-                        <li><a href="./productDec.html">products </a></li>
-                        <li><a href="./users.html">users</a></li>
-                        <li><a href="./index.html" class="Home">Home</a></li>
-                    </ul>
-                </div>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Fokir</a>
             </div>
+            <!-- <div class="main">
+  </div>      -->
+
+  <div class="mobile-menu-bar" >
+    <i class="fa fa-bars btn" id="btn-i" ></i>
+</div>
+
+                <ul class="ulManu">
+                  <li><a href="./login.html">Login</a></li>
+                  <li><a class="activenav" href="./register.html">Register</a></li>
+                  <li><a href="./contactUs.html">Contact us</a></li>
+                  <li><a href="./productDec.html">products </a></li>
+                  <li><a href="./users.html">users</a></li>
+                  <li><a href="./index.html" class="Home">Home</a></li>
+                </ul>
+
 
         </div>
-    </nav>
+
+         </div>
+
+
+
+    </div>
+</nav>
 
 
 
@@ -602,6 +623,17 @@
         </div>
     </div>
 
+
+
+
+    <script> 
+        $(document).ready(function(){
+          $("#btn-i").click(function(){
+            $(".ulManu").toggleClass("active");
+          });
+        });
+        </script>
+  
 
 </body>
 

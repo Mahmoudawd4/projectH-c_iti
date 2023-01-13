@@ -170,11 +170,16 @@ a:hover {
     display: none;
     
   }
-  
+
+ 
+
   /* .flik .main li {
     
      
   } */
+
+
+
 
   .flik .main li a
   {
@@ -408,11 +413,11 @@ a:hover {
   
   .users-tb
   {
-    margin-top: 5rem;
+    margin-top: 15rem;
     margin-bottom: 1rem;
     color: #000;
   }
-  
+
   @media (max-width: 800px) {
     .users-table {
       border: 0;
@@ -455,3 +460,35 @@ a:hover {
     }
   }
   
+
+  .navf
+  {
+    display:block ;
+    height: 5rem;
+    background-color: #000;
+
+  }
+
+  .ulManu li a:hover
+  {
+    border-bottom: white solid 1px;
+  }
+
+  .activenav
+  {
+    color: #ff305b !important;
+  }
+
+  .copy a:hover{
+
+    color: #000;
+    background-color: #dddddd;
+
+  }
+
+
+  .icon-footer a:hover
+  {
+    color: #000;
+    background-color: #fff;
+  }
