@@ -21,6 +21,7 @@ li{
 }
 
 ul{
+  padding: 1.5rem;
     display: inline-block;
 }
 nav{
@@ -31,7 +32,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
 
 
@@ -85,7 +86,109 @@ a:hover {
     background-size: 100% 100%;
 }
 
-/* card */
+
+ .mobile-menu-bar{
+    display: inline-block;
+    padding: 1.5rem;
+    text-align: right;
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 20px; 
+    display: none;
+  } 
+
+  
+  
+  /* .mobile-menu-bar p{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+   */
+
+/* resposive navbar  */
+
+
+@media (max-width: 800px) {
+
+    /* .mobile-menu-bar{
+        display: block;
+      }
+    
+      .menu a:hover{
+      background: #eee;
+      color: #000;
+      transition-duration: 0.5s;
+    } */
+
+    
+    .mobile-menu-bar i{
+     
+        cursor: pointer;
+      } 
+    
+     
+    
+      /* .menu a{
+        display: block;
+        text-align: center;
+      } */
+    
+      
+
+    
+    .logo
+    {
+        float: none;
+    }
+    .nav-bar li{
+        float: none;
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        display: inline-block;
+      
+    }
+
+    .mobile-menu-bar
+    {
+        float: right;
+        display: inline-block;
+    }
+  .flik .main {
+    display: block;
+    text-align: center;
+    display: block;
+  }
+  
+  .nav-bar ul{
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    width: 70%;
+    text-align: center;
+    display: none;
+    
+  }
+  
+  /* .flik .main li {
+    
+     
+  } */
+
+  .flik .main li a
+  {
+    display: block;
+   
+  }
+}
+
+
+.active{
+    display:block !important;
+  }
+  /* end nav bar  */
+/* card section */
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -139,7 +242,10 @@ a:hover {
   .card-text h4 {
     margin: 10px 0;
   }
-
+  .card-text h4 a
+  {
+    color: #000;
+  }
   .card-text p {
     font-size: 14px;
     color: black;
@@ -152,7 +258,7 @@ a:hover {
 
   @media (max-width: 600px) {
     .card {
-      width: 100%; 
+      width: 90%; 
     }
   }
 
@@ -224,3 +330,127 @@ a:hover {
     color: #ff305b;
     border-color: #ff305b;
   }
+
+  /* product desc */
+.product-card{
+    margin-top: 5rem;
+    background-color: black;
+    padding: 2rem;
+}
+  .left-column img
+  {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+  }
+  
+
+  .product-card {
+    width: 100%;
+  }
+  
+  .left-column {
+    margin-left: 1rem;
+    float: left;
+    width: 40%;
+  }
+  
+  .right-column {
+    float: right;
+    width: 55%;
+  }
+ 
+  .clearfix {
+    clear: both;
+  }
+  
+  .product-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .product-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    /* margin: 1rem; */
+
+  }
+  
+  @media (max-width: 800px) {
+    .left-column,
+    .right-column {
+      width: 100%;
+      float: none;
+    }
+  }
+  
+
+  /* users pages is  css  */
+
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .users-table th,
+  .users-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .users-table th {
+    text-align: left;
+  }
+  
+  .users-tb
+  {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  @media (max-width: 800px) {
+    .users-table {
+      border: 0;
+    }
+    
+    .users-table thead {
+      border: none;
+      /* hidden  */
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .users-table tr {
+      border-bottom: 3px solid #dddddd;
+      display: block;
+      margin-bottom: 0.625em;
+    }
+    
+    .users-table td {
+      border-bottom: 1px solid #dddddd;
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+    }
+    
+    /* .users-table td::before { */
+      /* content: attr(data-label); */
+      /* float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    } */
+    
+    .users-table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
