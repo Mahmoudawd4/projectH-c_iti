@@ -293,6 +293,10 @@ a:hover {
 .footer{
     background: #333333 ;
     padding: 50px 0;
+    /* clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px; */
 }
 .icon-footer li{
     float: left;
