@@ -408,6 +408,7 @@ a:hover {
     margin-bottom: 1rem;
     color: #000;
   }
+  
   @media (max-width: 800px) {
     .users-table {
       border: 0;
@@ -435,7 +436,7 @@ a:hover {
       border-bottom: 1px solid #dddddd;
       display: block;
       font-size: 0.8em;
-      text-align: right;
+      text-align: left;
     }
     
     /* .users-table td::before { */
