@@ -107,44 +107,17 @@ a:hover {
 
   
   
-  /* .mobile-menu-bar p{
-    display: inline-block;
-    float: left;
-    margin: 0;
-    padding: 0;
-  }
-   */
-
+ 
 /* resposive navbar  */
 
 
 @media (max-width: 800px) {
-
-    /* .mobile-menu-bar{
-        display: block;
-      }
-    
-      .menu a:hover{
-      background: #eee;
-      color: #000;
-      transition-duration: 0.5s;
-    } */
-
-    
+  
     .mobile-menu-bar i{
      
         cursor: pointer;
       } 
-    
-     
-    
-      /* .menu a{
-        display: block;
-        text-align: center;
-      } */
-    
-      
-
+  
     
     .logo
     {
@@ -183,15 +156,6 @@ a:hover {
   }
 
  
-
-  /* .flik .main li {
-    
-     
-  } */
-
-
-
-
   .flik .main li a
   {
     display: block;
@@ -203,8 +167,7 @@ a:hover {
 .active{
     display:block !important;
   }
-  /* end nav bar  */
-/* card section */
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -236,14 +199,7 @@ a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
-  /* .card-image {
-    background-image: url('../img/product1.jpeg');
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-
-  } */
+ 
 
   .card-image img
   {
@@ -309,10 +265,7 @@ a:hover {
 .footer{
     background: #333333 ;
     padding: 50px 0;
-    /* clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px; */
+
 }
 .icon-footer li{
     float: left;
@@ -352,6 +305,7 @@ a:hover {
     margin-top: 5rem;
     background-color: black;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
   .left-column img
   {
@@ -407,6 +361,7 @@ a:hover {
   .users-table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 5rem;
     
   }
   
@@ -437,7 +392,7 @@ a:hover {
     .users-table thead {
       border: none;
       /* hidden  */
-      clip: rect(0 0 0 0);
+      /* clip: rect(0 0 0 0); */
       height: 1px;
       margin: -1px;
       overflow: hidden;
@@ -459,12 +414,7 @@ a:hover {
       text-align: left;
     }
     
-    /* .users-table td::before { */
-      /* content: attr(data-label); */
-      /* float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-    } */
+   
     
     .users-table td:last-child {
       border-bottom: 0;
@@ -541,4 +491,7 @@ a:hover {
   }
 
   
-  
+  .logo a:hover
+  {
+    color: #000;
+  }
